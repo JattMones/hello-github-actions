@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-sh -c "pwd"
+sh -c "ls"

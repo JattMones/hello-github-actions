@@ -3,11 +3,7 @@ description: "run pytest"
 author: "JattMones"
 
 inputs:
-  MY_NAME:
-    description: "Holds the authors name"
-    required: true
-    default: "Author"
-
+  
 runs:
   using: "docker"
   image: "Dockerfile"

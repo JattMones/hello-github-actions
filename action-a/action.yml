@@ -2,8 +2,6 @@ name: "Pytest action"
 description: "run pytest"
 author: "JattMones"
 
-inputs:
-  
 runs:
   using: "docker"
   image: "Dockerfile"

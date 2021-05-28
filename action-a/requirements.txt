@@ -1,0 +1,7 @@
+pytest
+pylint
+assertpy
+pendulum
+pyspeedtest
+psutil
+pathlib

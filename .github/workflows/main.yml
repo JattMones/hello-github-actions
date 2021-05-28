@@ -8,19 +8,19 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: ./action-a
-  mac:
-    name: pytest action
-    runs-on: mac-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "MacJones"
-  windows:
-    name: pytest action
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
-        with:
-          MY_NAME: "BillyG"
+#  mac:
+#    name: pytest action
+#    runs-on: mac-latest
+#    steps:
+#      - uses: actions/checkout@v1
+#      - uses: ./action-a
+#        with:
+#          MY_NAME: "MacJones"
+#  windows:
+#    name: pytest action
+#    runs-on: windows-latest
+#    steps:
+#      - uses: actions/checkout@v1
+#      - uses: ./action-a
+#        with:
+#          MY_NAME: "BillyG"

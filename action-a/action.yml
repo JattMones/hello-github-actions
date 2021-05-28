@@ -1,12 +1,12 @@
-name: "Hello Actions"
-description: "Greet someone"
-author: "octocat@github.com"
+name: "Pytest action"
+description: "run pytest"
+author: "JattMones"
 
 inputs:
   MY_NAME:
-    description: "Who to greet"
+    description: "Holds the authors name"
     required: true
-    default: "World"
+    default: "Author"
 
 runs:
   using: "docker"

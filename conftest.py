@@ -33,14 +33,18 @@ def general_info():
 def specific_info():
     """ Information which may be useful to look at if we notice odd/inconsistent test results """
     global pytest_suite_info
-    f = open(str(Path('test_logs/'+str(pytest_suite_info['StartTime']))), 'w+')
-    content = ''
+    try:
+        f = open(str(Path('test_logs/'+str(pytest_suite_info['StartTime']))), 'w+') # Better if this was being stored on a shared drive
+        content = ''
     # content = psutil.....
     #measures things like memory, cpu, connectivity type, etc.
     # We can also add some of these to our info dict if we'd like
     #...
-    f.write(content)
-    f.close()
+        f.write(content)
+        f.close()
+    except FileNotFoundError:
+        # Github actions doesn't have test_logs directory
+        pass
 
 @pytest.fixture(autouse=True, scope='session')
 def setup_teardown():

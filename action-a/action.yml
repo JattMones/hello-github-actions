@@ -2,6 +2,12 @@ name: "Pytest action"
 description: "run pytest"
 author: "JattMones"
 
+inputs:
+  MY_NAME:
+    description: "Holds my name"
+    required: true
+    default: "Author"
+
 runs:
   using: "docker"
   image: "Dockerfile"
